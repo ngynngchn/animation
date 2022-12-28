@@ -1,0 +1,27 @@
+section {
+  height: 600px;
+  width: 600px;
+  background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  width: 400px;
+  transition: all 3s ease-in;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  transition: all 1s ease-in;
+}
+
+img:hover {
+  box-shadow: -10px -7px 27px 20px #451ca4, -10px 10px 30px 7px #ff616b;
+}
+
+.frame:hover {
+  box-shadow: 12px 10px 30px 7px #e488ff, -7px -5px 30px 5px #8cff85;
+}
