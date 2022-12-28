@@ -15,13 +15,12 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-a {
-  width: 50px;
-  height: 70px;
-  padding: 10px;
+.material-symbols-outlined.icon {
+  font-size: 4rem;
+  color: black;
+  animation: jump 2s ease-in-out infinite;
 }
 
 #section1 {
@@ -34,56 +33,17 @@ a {
   background-color: #80ffb9;
 }
 
-.arrow {
-  background-color: black;
-  border-radius: 15px;
-  width: 20px;
-  height: 4px;
-}
-
-.arrow.down {
-  animation: down-motion 2s ease-in-out infinite;
-}
-
-.arrow.up {
-  animation: up-motion 2s ease-in-out infinite;
-}
-
-.arrow::after {
-  content: "";
-  border-radius: 15px;
-  background-color: black;
-  display: block;
-  width: 4px;
-  height: 20px;
-}
-
-@keyframes down-motion {
+@keyframes jump {
   from {
-    transform: translateY(0px) rotate(225deg);
+    transform: translateY(0px);
     opacity: 1;
   }
   50% {
-    transform: translateY(40px) rotate(225deg);
+    transform: translateY(40px);
     opacity: 0.2;
   }
   to {
-    transform: translateY(0px) rotate(225deg);
-    opacity: 1;
-  }
-}
-
-@keyframes up-motion {
-  from {
-    transform: translateY(0px) rotate(45deg);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(40px) rotate(45deg);
-    opacity: 0.2;
-  }
-  to {
-    transform: translateY(0px) rotate(45deg);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
